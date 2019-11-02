@@ -15,7 +15,7 @@ ActiveRecord::Schema.define(version: 2019_10_17_035910) do
   create_table "games", force: :cascade do |t|
     t.string "numbers"
     t.string "difficulty"
-    t.boolean "won"
+    t.boolean "won", default: false
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
